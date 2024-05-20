@@ -3,9 +3,11 @@ import { initializeApp } from "firebase/app";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
+require('dotenv').config();
+
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDC3ffWSSfn7yXmOidqA9caHZvffnszgL0",
+  apiKey: process.env.API_KEY,
   authDomain: "chatify-1-0-0.firebaseapp.com",
   projectId: "chatify-1-0-0",
   storageBucket: "chatify-1-0-0.appspot.com",
